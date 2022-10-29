@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './carticon.module.css';
 import { useState } from 'react';
+import cartIcon from '../../assets/icons/cart90.png';
 
 export default function CartIcon({ items }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,8 +14,8 @@ export default function CartIcon({ items }) {
   }, [items]);
 
   return (
-    <div>
-      <img className={styles.cartIcon} src='#' alt='cart' />
+    <div className={styles.cartParent}>
+      <img className={styles.cartIcon} src={cartIcon} alt='cart' />
       {isVisible ? <div className={styles.inCart}>{items}</div> : <></>}
     </div>
   );
