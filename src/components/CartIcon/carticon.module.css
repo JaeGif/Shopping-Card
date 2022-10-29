@@ -1,0 +1,17 @@
+:root {
+  --notification-size: 1rem;
+}
+
+.cartIcon {
+}
+
+.inCart {
+  height: fit-content;
+  width: calc(var(--notification-size) + (var(--notification-size) * 0.125));
+  font-size: var(--notification-size);
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  padding: 0.05rem;
+}

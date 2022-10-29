@@ -1,0 +1,18 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexSpace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  width: 15vw;
+}

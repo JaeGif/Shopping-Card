@@ -13,10 +13,5 @@ export default function Overview() {
       key={uniqid()}
     ></ProductDetailed>
   ));
-  return (
-    <div>
-      {productInfo}
-      {/* Contains details descriptions of all the product pages, and a learn more button */}
-    </div>
-  );
+  return <div>{productInfo}</div>;
 }
