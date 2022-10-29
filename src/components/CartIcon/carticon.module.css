@@ -1,5 +1,5 @@
 :root {
-  --notification-size: 1rem;
+  --notification-size: 2vh;
 }
 
 .cartIcon {
@@ -8,7 +8,7 @@
 .cartParent {
   position: relative;
   height: 5vh;
-  width: 2.5vw;
+  width: 5vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -24,7 +24,7 @@
   border-radius: 50%;
   background-color: red;
   text-align: center;
-  padding: 0.05rem;
+  padding: 0.05vh;
   top: 0;
   right: 0;
 }
