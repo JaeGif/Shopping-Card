@@ -2,8 +2,12 @@
   font-family: 'FutureMoon';
   src: local('futuremoon'), url('./assets/fonts/futuremoon.ttf');
 }
+@font-face {
+  font-family: 'tokyonight';
+  src: local('tokyonight'), url('./assets/fonts/tokyonight.ttf');
+}
 * {
-  font-family: 'FutureMoon';
+  font-family: 'tokyonight';
 }
 
 button,

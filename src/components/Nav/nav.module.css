@@ -17,3 +17,7 @@
   list-style: none;
   width: 15vw;
 }
+.theme {
+  background-color: black;
+  color: var(--mid-blue-theme);
+}

@@ -1,7 +1,7 @@
 :root {
-  --pink-highlight: #ff4499;
-  --blue-green-highlight: #00ffd2;
-  --dark-blue-theme: #0a0047;
+  --pink-highlight: rgb(222, 57, 131);
+  --blue-green-highlight: rgb(0, 192, 157);
+  --dark-blue-theme: #070124;
   --mid-blue-theme: #004687;
 }
 
@@ -10,7 +10,7 @@
 }
 .circleFlair {
   position: absolute;
-  background-color: var(--blue-green-highlight);
+  background-color: rgba(0, 192, 157, 0.75);
   height: 70vh;
   width: 70vh;
   border-radius: 50%;
@@ -20,12 +20,11 @@
   transition: background-color 0.333s linear;
 }
 .circleFlairHover {
-  background-color: var(--pink-highlight);
+  background-color: rgba(222, 57, 131, 0.75);
 }
 
 .imgContainer {
   position: relative;
-  border: solid 1px red;
   height: 85vh;
   z-index: 10;
 }
@@ -36,14 +35,17 @@
   align-items: flex-start;
   height: 85vh;
   width: 100vw;
-  border: 1px red solid;
   margin: 0;
-  background-color: rgb(23, 3, 34);
-  color: white;
+  background-color: #140124;
+  background-image: url('../../assets/bokeh.jpg');
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
 }
+/* rgb(23, 3, 34) */
 .productNameFont {
   font-size: 3rem;
-  color: var(--pink-highlight);
+  color: rgb(222, 57, 131);
 }
 .homeDescriptionP {
   font-size: 2rem;
@@ -65,7 +67,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid red;
   height: 65vh;
 }
 .innerLeft {
@@ -73,5 +74,4 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 2px solid red;
 }
