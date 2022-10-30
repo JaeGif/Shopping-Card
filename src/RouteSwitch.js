@@ -1,20 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App';
-import Main from './components/Main/Main';
 import NavBar from './components/Nav/NavBar';
-import Store from './components/Store';
 import { useState } from 'react';
+import Overview from './components/Overview/Overview';
+import Home from './components/Home/Home';
 
 const RouteSwitch = () => {
-  const [itemsInCart, setItemsInCart] = useState(1);
+  const [itemsInCart, setItemsInCart] = useState(0);
 
   return (
     <BrowserRouter>
       <NavBar items={itemsInCart}></NavBar>
-
       <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/store' element={<Store />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/store' element={<Overview />} />
       </Routes>
     </BrowserRouter>
   );

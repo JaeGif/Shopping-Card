@@ -4,6 +4,7 @@ import '../../assets/fonts/futuremoon.ttf';
 import githubPinkIcon from '../../assets/icons/github-pink.png';
 import instaPinkIcon from '../../assets/icons/insta-pink.png';
 import styles from './home.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [isCircleHovered, setIsCircleHovered] = useState(false);
@@ -40,17 +41,19 @@ export default function Home() {
               make a quality, yet affordable brand for everyone.
             </p>
           </div>
-          <button>
-            <div className='original'>Tokyo Night Line</div>
-            <div className='letters'>
-              <span>Tok</span>
-              <span>yo</span>
-              <span>Nig</span>
-              <span>ht</span>
-              <span>Li</span>
-              <span>ne</span>
-            </div>
-          </button>
+          <Link to='/store'>
+            <button>
+              <div className='original'>Tokyo Night Line</div>
+              <div className='letters'>
+                <span>Tok</span>
+                <span>yo</span>
+                <span>Nig</span>
+                <span>ht</span>
+                <span>Li</span>
+                <span>ne</span>
+              </div>
+            </button>
+          </Link>
         </div>
         <div className={styles.socialsWrapper}>
           <a href='https://github.com/JaeGif' rel='noreferrer' target='_blank'>

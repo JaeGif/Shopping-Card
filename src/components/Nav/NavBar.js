@@ -8,11 +8,15 @@ export default function NavBar({ items }) {
     <nav className={`${styles.flexSpace} ${styles.theme}`}>
       <h2>Tokyo Night</h2>
       <ul className={styles.navList}>
-        <Link to='/'>
-          <li>Home</li>
+        <Link className={styles.navList} to='/'>
+          <li>
+            <div className={styles.innerDiv}>Home</div>
+          </li>
         </Link>
-        <Link to='/store'>
-          <li>Products</li>
+        <Link className={styles.navList} to='/store'>
+          <li>
+            <div className={styles.innerDiv}>Products</div>
+          </li>
         </Link>
       </ul>
       <CartIcon items={items} />
