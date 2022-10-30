@@ -20,6 +20,13 @@ export default function Home() {
       <div>
         <div className={styles.padding}>
           <div className={styles.innerLeft}>
+            <div
+              className={
+                isCircleHovered
+                  ? `${styles.smallerCircle} ${styles.smallerHover}`
+                  : styles.smallerCircle
+              }
+            ></div>
             <h2 className={styles.productNameFont}>Breezy Bomber</h2>
             <p className={styles.homeDescriptionP}>
               Out main product line this year is inspired heavily by CyberPunk.

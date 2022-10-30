@@ -6,11 +6,11 @@
 }
 
 .mainProductImg {
-  height: 85vh;
+  height: 92vh;
 }
 .circleFlair {
   position: absolute;
-  background-color: rgba(0, 192, 157, 0.75);
+  background-color: rgba(0, 192, 157, 0.55);
   height: 70vh;
   width: 70vh;
   border-radius: 50%;
@@ -20,12 +20,25 @@
   transition: background-color 0.333s linear;
 }
 .circleFlairHover {
-  background-color: rgba(222, 57, 131, 0.75);
+  background-color: rgba(222, 57, 131, 0.55);
 }
-
+.smallerCircle {
+  position: absolute;
+  background-color: rgba(222, 57, 131, 0.5);
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  transition: background-color 0.333s linear;
+}
+.smallerHover {
+  background-color: rgba(0, 192, 157, 0.5);
+}
 .imgContainer {
   position: relative;
-  height: 85vh;
+  height: 92vh;
   z-index: 10;
 }
 
@@ -33,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 85vh;
+  height: 92vh;
   width: 100vw;
   margin: 0;
   background-color: #140124;
@@ -67,9 +80,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 65vh;
+  height: 75vh;
 }
 .innerLeft {
+  position: relative;
   height: fit-content;
   display: flex;
   flex-direction: column;
