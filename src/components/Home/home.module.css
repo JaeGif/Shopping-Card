@@ -10,7 +10,7 @@
 }
 .circleFlair {
   position: absolute;
-  background-color: #00ffd2;
+  background-color: var(--blue-green-highlight);
   height: 70vh;
   width: 70vh;
   border-radius: 50%;
@@ -18,12 +18,24 @@
   left: 0;
   z-index: -1;
 }
+.circleFlairHover {
+  position: absolute;
+  background-color: var(--pink-highlight);
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .imgContainer {
   position: relative;
   border: solid 1px red;
   height: 85vh;
   z-index: 10;
 }
+
 .homeContainer {
   display: flex;
   justify-content: center;
@@ -32,12 +44,39 @@
   width: 100vw;
   border: 1px red solid;
   margin: 0;
-  background-color: var(--dark-blue-theme);
+  background-color: rgb(23, 3, 34);
   color: white;
 }
 .productNameFont {
   font-size: 3rem;
 }
+.homeDescriptionP {
+  font-size: 2rem;
+}
+.homeSubDescription {
+  font-size: 1.5rem;
+}
 .socialsIcons {
   height: 5vh;
+}
+.socialsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.padding {
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid red;
+  height: 65vh;
+}
+.innerLeft {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid red;
 }
