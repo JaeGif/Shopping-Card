@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'FutureMoon';
+  src: local('futuremoon'), url('./assets/fonts/futuremoon.ttf');
+}
+* {
+  font-family: 'FutureMoon';
+}
+
+button {
+  height: 5vh;
+  background-color: #00ffd2;
+  color: #ff4499;
+  border: solid 2px #0a0047;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}

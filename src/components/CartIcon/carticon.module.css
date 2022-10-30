@@ -1,5 +1,9 @@
 :root {
   --notification-size: 2vh;
+  --pink-highlight: #ff4499;
+  --blue-green-highlight: #00ffd2;
+  --dark-blue-theme: #0a0047;
+  --mid-blue-theme: #004687;
 }
 
 .cartIcon {
@@ -22,7 +26,8 @@
   font-size: var(--notification-size);
   border: none;
   border-radius: 50%;
-  background-color: red;
+  color: var(--pink-highlight);
+  background-color: var(--blue-green-highlight);
   text-align: center;
   padding: 0.05vh;
   top: 0;

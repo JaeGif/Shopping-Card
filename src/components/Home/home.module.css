@@ -1,0 +1,43 @@
+:root {
+  --pink-highlight: #ff4499;
+  --blue-green-highlight: #00ffd2;
+  --dark-blue-theme: #0a0047;
+  --mid-blue-theme: #004687;
+}
+
+.mainProductImg {
+  height: 85vh;
+}
+.circleFlair {
+  position: absolute;
+  background-color: #00ffd2;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.imgContainer {
+  position: relative;
+  border: solid 1px red;
+  height: 85vh;
+  z-index: 10;
+}
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 85vh;
+  width: 100vw;
+  border: 1px red solid;
+  margin: 0;
+  background-color: var(--dark-blue-theme);
+  color: white;
+}
+.productNameFont {
+  font-size: 3rem;
+}
+.socialsIcons {
+  height: 5vh;
+}

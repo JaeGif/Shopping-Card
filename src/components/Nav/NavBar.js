@@ -5,7 +5,7 @@ import CartIcon from '../CartIcon/CartIcon';
 export default function NavBar({ items }) {
   return (
     <nav className={styles.flexSpace}>
-      <h2>StoreName</h2>
+      <h2>Tokyo Night</h2>
       <ul className={styles.navList}>
         <li>Home</li>
         <li>Products</li>
