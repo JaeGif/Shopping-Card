@@ -7,11 +7,8 @@ import { useState } from 'react';
 import Home from '../Home/Home';
 
 export default function Main() {
-  const [itemsInCart, setItemsInCart] = useState(1);
-
   return (
     <div>
-      <NavBar items={itemsInCart}></NavBar>
       <Home></Home>
     </div>
   );
