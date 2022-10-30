@@ -6,17 +6,13 @@ import { Link } from 'react-router-dom';
 export default function NavBar({ items }) {
   return (
     <nav className={`${styles.flexSpace} ${styles.theme}`}>
-      <h2>Tokyo Night</h2>
+      <h1 className={styles.logoText}>Tokyo Night</h1>
       <ul className={styles.navList}>
         <Link className={styles.navList} to='/'>
-          <li>
-            <div className={styles.innerDiv}>Home</div>
-          </li>
+          <li className={styles.innerLiText}>Home</li>
         </Link>
         <Link className={styles.navList} to='/store'>
-          <li>
-            <div className={styles.innerDiv}>Products</div>
-          </li>
+          <li className={styles.innerLiText}>Products</li>
         </Link>
       </ul>
       <CartIcon items={items} />

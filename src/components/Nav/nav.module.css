@@ -17,13 +17,12 @@
   text-decoration: none;
   list-style: none;
   width: 20vw;
-  border: solid red 1px;
 }
 .theme {
   background-color: black;
   color: var(--mid-blue-theme);
 }
-.innerDiv {
+.innerLiText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,5 +31,11 @@
   min-width: fit-content;
   font-size: 2rem;
   padding: 0.5vh;
-  border: solid 1px blue;
+  color: white;
+}
+.innerLiText:hover {
+  color: yellow;
+}
+.logoText {
+  font-size: 2rem;
 }

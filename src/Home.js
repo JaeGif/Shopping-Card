@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className={styles.homeContainer}>
-      <div>
+      <div className={styles.bottomLeftWrapper}>
         <div className={styles.padding}>
           <div className={styles.innerLeft}>
             <div
@@ -41,9 +41,13 @@ export default function Home() {
               make a quality, yet affordable brand for everyone.
             </p>
           </div>
-          <Link style={{ textDecoration: 'none' }} to='/store'>
+          <Link
+            style={{ textDecoration: 'none', maxWidth: 'fit-content' }}
+            to='/store'
+          >
             <button>
               <div className='original'>Tokyo Night Line</div>
+
               <div className='letters'>
                 <span>Tok</span>
                 <span>yo</span>

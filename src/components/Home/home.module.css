@@ -8,6 +8,9 @@
 .mainProductImg {
   height: 92vh;
 }
+.bottomLeftWrapper {
+  border: solid 5px red;
+}
 .circleFlair {
   position: absolute;
   background-color: rgba(0, 192, 157, 0.55);
