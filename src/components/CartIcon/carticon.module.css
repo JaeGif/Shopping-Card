@@ -3,12 +3,12 @@
 }
 
 .cartIcon {
-  height: 4vh;
+  height: 5vh;
 }
 .cartParent {
   position: relative;
-  height: 5vh;
-  width: 5vh;
+  height: 6vh;
+  width: 6vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
