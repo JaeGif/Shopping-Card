@@ -17,16 +17,10 @@
   top: 0;
   left: 0;
   z-index: -1;
+  transition: background-color 0.333s linear;
 }
 .circleFlairHover {
-  position: absolute;
   background-color: var(--pink-highlight);
-  height: 70vh;
-  width: 70vh;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .imgContainer {
@@ -49,6 +43,7 @@
 }
 .productNameFont {
   font-size: 3rem;
+  color: var(--pink-highlight);
 }
 .homeDescriptionP {
   font-size: 2rem;

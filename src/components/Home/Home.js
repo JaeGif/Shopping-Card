@@ -29,7 +29,8 @@ export default function Home() {
             <br></br>
             <p className={styles.homeSubDescription}>
               Sourced ethically from Japan, our fabrics seamlessly blend a
-              luxurious cotton feel with a sleek matte finish.
+              luxurious cotton feel with a sleek matte finish. We work hard to
+              make a quality, yet affordable brand for everyone.
             </p>
           </div>
           <button>
@@ -71,7 +72,9 @@ export default function Home() {
         />
         <div
           className={
-            isCircleHovered ? styles.circleFlairHover : styles.circleFlair
+            isCircleHovered
+              ? `${styles.circleFlairHover} ${styles.circleFlair}`
+              : styles.circleFlair
           }
         ></div>
       </div>

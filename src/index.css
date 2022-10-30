@@ -45,7 +45,7 @@ button {
   position: relative;
   text-transform: uppercase;
 }
-div .original {
+.original {
   background: #00ffd2;
   color: #000;
   display: grid;
@@ -54,33 +54,33 @@ div .original {
   position: absolute;
   transition: transform 0.2s;
 }
-div:hover .original {
+button:hover .original {
   transform: translateY(100%);
 }
-div .letters {
+.letters {
   display: inline-flex;
 }
-div span {
+.letters span {
   opacity: 0;
   transform: translateY(-15px);
   transition: transform 0.2s, opacity 0.2s;
 }
-div:hover span {
+button:hover span {
   opacity: 1;
   transform: translateY(0);
 }
-div:hover span:nth-child(2) {
+button:hover span:nth-child(2) {
   transition-delay: 0.1s;
 }
-div:hover span:nth-child(3) {
+button:hover span:nth-child(3) {
   transition-delay: 0.2s;
 }
-div:hover span:nth-child(4) {
+button:hover span:nth-child(4) {
   transition-delay: 0.3s;
 }
-div:hover span:nth-child(5) {
+button:hover span:nth-child(5) {
   transition-delay: 0.4s;
 }
-div:hover span:nth-child(6) {
+button:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
