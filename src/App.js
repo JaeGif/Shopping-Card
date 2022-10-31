@@ -18,8 +18,13 @@ const App = () => {
     setNumItemsInCart(numItemsInCart - 1);
   };
   const removeItemFromCart = (id, e) => {
+    for (let i = 0; i < cartItems.length; i++) {
+      if (id === cartItems[i].id) {
+        onRemoveItemNumUpdate();
+        break;
+      }
+    }
     setCartItems(cartItems.filter((el) => id !== el.id));
-    onRemoveItemNumUpdate();
   };
   const addItemToCart = (itemObject) => {
     setCartItems([...cartItems, itemObject]);
