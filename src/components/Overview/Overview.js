@@ -12,6 +12,7 @@ export default function Overview(props) {
       fullItemObject={product}
       productName={product.name}
       productDescription={product.description}
+      productPrice={product.price}
       productImg={product.url}
       key={uniqid()}
     ></ProductDetailed>

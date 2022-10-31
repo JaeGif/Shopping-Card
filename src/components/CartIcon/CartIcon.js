@@ -5,6 +5,7 @@ import cartIcon from '../../assets/icons/cart96.png';
 
 export default function CartIcon({ items }) {
   const [isVisible, setIsVisible] = useState(false);
+  console.log(items);
   useEffect(() => {
     if (items >= 1) {
       setIsVisible(true);

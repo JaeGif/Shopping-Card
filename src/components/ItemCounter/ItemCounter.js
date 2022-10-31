@@ -18,7 +18,7 @@ export default function ItemCounter({
         src={subtract}
         alt='remove'
       />
-      <input className={styles.inputSelect} type='number'></input>
+
       <img
         onClick={() => {
           addItemToCart(itemObject);

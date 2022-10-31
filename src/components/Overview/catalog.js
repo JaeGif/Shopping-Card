@@ -8,39 +8,43 @@ import uniqid from 'uniqid';
 export const catalog = {
   products: [
     {
-      name: '1',
+      name: 'Breezy Bomber',
       description:
-        'This is a super cool product and you should totally spend all your hard earned dallarydoos on this bad boy',
+        "This bomber is so soft and strong you'll think it was made in a lab.",
       url: `${bomberURL}`,
       id: uniqid(),
+      price: 149.99,
     },
     {
-      name: '2',
+      name: "Trencher's Coat",
       description:
-        'This is a super cool product and you should totally spend all your hard earned dallarydoos on this bad boy',
+        'We pinched this off a choom for 400 eddies. Stylish and sleek, you can have it for 2 and some change.',
       url: `${coatURL}`,
       id: uniqid(),
+      price: 209.99,
     },
     {
-      name: '3',
-      description:
-        'This is a super cool product and you should totally spend all your hard earned dallarydoos on this bad boy',
+      name: 'Dope Shirt',
+      description: 'I just thought it was cool.',
       url: `${dopeShirtURL}`,
       id: uniqid(),
+      price: 49.99,
     },
     {
-      name: '4',
+      name: 'Jeans',
       description:
-        'This is a super cool product and you should totally spend all your hard earned dallarydoos on this bad boy',
+        'A classic no matter the decade. Quality denim always helps in a pinch.',
       url: `${jeansURL}`,
       id: uniqid(),
+      price: 79.99,
     },
     {
-      name: '5',
+      name: 'House Special',
       description:
-        'This is a super cool product and you should totally spend all your hard earned dallarydoos on this bad boy',
+        "Just leave the fashion to us and we'll make sure you're taken care of.",
       url: `${shirtURL}`,
       id: uniqid(),
+      price: 599.99,
     },
   ],
 };

@@ -22,6 +22,7 @@ export default function ProductDetailed(props) {
         alt='missing product'
       />
       <p>{props.productDescription}</p>
+      <p>{props.productPrice}</p>
       {isHovered && (
         <ItemCounter
           itemObject={props.fullItemObject}
