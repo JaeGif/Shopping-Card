@@ -10,23 +10,27 @@ export default function ItemCounter({
 }) {
   return (
     <div className={styles.counterContainer}>
-      <img
-        onClick={() => {
-          removeItemFromCart(itemObject.id);
-        }}
-        className={styles.icons}
-        src={subtract}
-        alt='remove'
-      />
+      <div className={styles.iconContainer}>
+        <p
+          onClick={() => {
+            removeItemFromCart(itemObject.id);
+          }}
+          className={styles.icons}
+        >
+          -
+        </p>
+      </div>
 
-      <img
-        onClick={() => {
-          addItemToCart(itemObject);
-        }}
-        className={styles.icons}
-        src={add}
-        alt='add'
-      />
+      <div className={styles.iconContainer}>
+        <p
+          onClick={() => {
+            addItemToCart(itemObject);
+          }}
+          className={styles.icons}
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }

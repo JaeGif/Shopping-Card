@@ -2,29 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px red;
   border-radius: 2px;
+  gap: 1vw;
 }
 
 .icons {
-  height: 4vh;
-  border: 1px solid red;
+  font-size: 2rem;
+  cursor: pointer;
 }
-
+.iconContainer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .inputSelect {
   height: 4vh;
   width: 4vw;
   text-align: center;
   overflow: hidden;
 }
-
-/* Remove default stylings */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
+.icons:hover {
+  color: #ff4499;
 }

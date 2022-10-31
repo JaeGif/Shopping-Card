@@ -1,3 +1,36 @@
 .productImg {
-  height: 30vh;
+  height: 25vh;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  width: 40vh;
+  position: relative;
+  background-color: #1f0034d3;
+  color: white;
+  overflow: hidden;
+  padding: 1vh;
+  border: solid 2px black;
+}
+.backgroundCircle {
+  height: 15vh;
+  width: 15vh;
+  background-color: rgba(221, 255, 0, 0.855);
+  border-radius: 50%;
+}
+.textWrapping {
+  text-align: center;
+  overflow-wrap: normal;
+}
+.priceAdding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  color: yellow;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import ProductDetailed from '../ProductDetailed/ProductDetailed';
-import styles from './overview.module.css';
 import { catalog } from './catalog';
 import uniqid from 'uniqid';
+import styles from './overview.module.css';
 
 export default function Overview(props) {
   const productInfo = catalog.products.map((product) => (
@@ -17,5 +17,5 @@ export default function Overview(props) {
       key={uniqid()}
     ></ProductDetailed>
   ));
-  return <div>{productInfo}</div>;
+  return <div className={styles.storeContainer}>{productInfo}</div>;
 }
