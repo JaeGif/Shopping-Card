@@ -18,7 +18,7 @@ export const catalog = {
     {
       name: "Trencher's Coat",
       description:
-        'We pinched this off a choom for 400 eddies. Stylish and sleek.',
+        'We pinched this off a choom for 400 eddies. Stylish and sleek, you can have it for 2 and some change.',
       url: `${coatURL}`,
       id: uniqid(),
       price: 209.99,

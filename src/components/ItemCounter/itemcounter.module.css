@@ -9,6 +9,7 @@
 .icons {
   font-size: 2rem;
   cursor: pointer;
+  z-index: 2;
 }
 .iconContainer {
   height: 5vh;

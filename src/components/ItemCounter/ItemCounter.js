@@ -1,6 +1,5 @@
 import React from 'react';
-import subtract from '../../assets/icons/subtract96.png';
-import add from '../../assets/icons/add96.png';
+
 import styles from './itemcounter.module.css';
 
 export default function ItemCounter({

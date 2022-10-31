@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/Nav/NavBar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Overview from './components/Overview/Overview';
 import Home from './components/Home/Home';
+import uniqid from 'uniqid';
 
 const App = () => {
   const [numItemsInCart, setNumItemsInCart] = useState(0);
@@ -17,17 +18,21 @@ const App = () => {
     }
     setNumItemsInCart(numItemsInCart - 1);
   };
-  const removeItemFromCart = (id, e) => {
-    for (let i = 0; i < cartItems.length; i++) {
-      if (id === cartItems[i].id) {
-        onRemoveItemNumUpdate();
-        break;
-      }
+  const removeItemFromCart = (id) => {
+    console.log(id);
+    let removeFirstMatchingID = cartItems.findIndex((el) => el.id === id);
+    if (removeFirstMatchingID === -1) {
+      return;
+    } else {
+      cartItems.splice(removeFirstMatchingID, 1);
+      setCartItems(cartItems);
+      onRemoveItemNumUpdate();
+      console.log(cartItems);
     }
-    setCartItems(cartItems.filter((el) => id !== el.id));
   };
   const addItemToCart = (itemObject) => {
     setCartItems([...cartItems, itemObject]);
+    console.log(cartItems);
     onAddItemNumUpdate();
   };
 

@@ -33,10 +33,8 @@ export default function ProductDetailed(props) {
 const randomPositionOfCircleStyles = () => {
   const right = Math.floor(Math.random() * 100);
   const top = Math.floor(Math.random() * 100);
-  console.log(right, top);
   return {
     position: 'absolute',
-    zIndex: '-1',
     right: `${right}%`,
     top: `${top}%`,
   };
