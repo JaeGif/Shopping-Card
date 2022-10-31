@@ -22,7 +22,13 @@ export default function ProductDetailed(props) {
         alt='missing product'
       />
       <p>{props.productDescription}</p>
-      {isHovered && <ItemCounter></ItemCounter>}
+      {isHovered && (
+        <ItemCounter
+          itemObject={props.fullItemObject}
+          addItemToCart={props.addItemToCart}
+          removeItemFromCart={props.removeItemFromCart}
+        ></ItemCounter>
+      )}
     </div>
   );
 }
