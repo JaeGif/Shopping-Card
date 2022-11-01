@@ -12,7 +12,6 @@ export default function CartIcon({
   removeItemFromCart,
 }) {
   const [isVisible, setIsVisible] = useState(false);
-  console.log(items);
   useEffect(() => {
     if (items >= 1) {
       setIsVisible(true);
@@ -22,8 +21,13 @@ export default function CartIcon({
   }, [items]);
 
   return (
-    <div onClick={() => openCart()} className={styles.cartParent}>
-      <img className={styles.cartIcon} src={cartIcon} alt='cart' />
+    <div className={styles.cartParent}>
+      <img
+        onClick={(e) => openCart(e)}
+        className={styles.cartIcon}
+        src={cartIcon}
+        alt='cart'
+      />
       {isVisible ? <div className={styles.inCart}>{items}</div> : <></>}
       <Cart
         removeItemFromCart={removeItemFromCart}

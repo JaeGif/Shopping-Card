@@ -7,9 +7,9 @@ import { useState } from 'react';
 export default function NavBar({ cart, items, removeItemFromCart }) {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  const openCart = () => {
-    console.log('yes');
-    console.log(isCartOpen);
+  const openCart = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
     if (!isCartOpen) {
       setIsCartOpen(true);
     } else {
