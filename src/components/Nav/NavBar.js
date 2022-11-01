@@ -4,7 +4,7 @@ import CartIcon from '../CartIcon/CartIcon';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function NavBar({ cart, items }) {
+export default function NavBar({ cart, items, removeItemFromCart }) {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const openCart = () => {
@@ -29,6 +29,7 @@ export default function NavBar({ cart, items }) {
         </Link>
       </ul>
       <CartIcon
+        removeItemFromCart={removeItemFromCart}
         cart={cart}
         isOpen={isCartOpen}
         openCart={openCart}

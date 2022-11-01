@@ -4,16 +4,23 @@ import Product from '../Product/Product';
 import uniqid from 'uniqid';
 import Checkout from './Checkout';
 
-export default function Cart({ cart, isOpen, items }) {
+export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
   const cartItemsRendered = cart.map((el) => (
-    <Product src={el.url} name={el.name} price={el.price} key={uniqid()} />
+    <Product
+      src={el.url}
+      name={el.name}
+      price={el.price}
+      id={el.id}
+      removeItemFromCart={removeItemFromCart}
+      key={uniqid()}
+    />
   ));
 
   const totalPrice = () => {
     let price = 0;
     for (let i = 0; i < cart.length; i++) {
       price += cart[i].price;
-      price = Math.round(price * 100) / 100;
+      price = Math.round((price + Number.EPSILON) * 100) / 100;
     }
     return price;
   };

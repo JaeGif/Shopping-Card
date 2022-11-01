@@ -35,7 +35,11 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <NavBar cart={cartItems} items={numItemsInCart}></NavBar>
+      <NavBar
+        removeItemFromCart={removeItemFromCart}
+        cart={cartItems}
+        items={numItemsInCart}
+      ></NavBar>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route

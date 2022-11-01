@@ -4,7 +4,13 @@ import { useState } from 'react';
 import cartIcon from '../../assets/icons/cart96.png';
 import Cart from '../Cart/Cart';
 
-export default function CartIcon({ cart, items, openCart, isOpen }) {
+export default function CartIcon({
+  cart,
+  items,
+  openCart,
+  isOpen,
+  removeItemFromCart,
+}) {
   const [isVisible, setIsVisible] = useState(false);
   console.log(items);
   useEffect(() => {
@@ -19,7 +25,11 @@ export default function CartIcon({ cart, items, openCart, isOpen }) {
     <div onClick={() => openCart()} className={styles.cartParent}>
       <img className={styles.cartIcon} src={cartIcon} alt='cart' />
       {isVisible ? <div className={styles.inCart}>{items}</div> : <></>}
-      <Cart cart={cart} isOpen={isOpen} />
+      <Cart
+        removeItemFromCart={removeItemFromCart}
+        cart={cart}
+        isOpen={isOpen}
+      />
     </div>
   );
 }
