@@ -3,6 +3,7 @@ import NavBar from './components/Nav/NavBar';
 import { useState } from 'react';
 import Overview from './components/Overview/Overview';
 import Home from './components/Home/Home';
+import Cart from './components/Cart/Cart';
 
 const App = () => {
   const [numItemsInCart, setNumItemsInCart] = useState(0);
@@ -34,7 +35,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <NavBar items={numItemsInCart}></NavBar>
+      <NavBar cart={cartItems} items={numItemsInCart}></NavBar>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route
@@ -46,6 +47,7 @@ const App = () => {
             />
           }
         />
+        <Route path='/cart' element={<Cart />}></Route>
       </Routes>
     </BrowserRouter>
   );

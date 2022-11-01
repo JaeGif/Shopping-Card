@@ -15,6 +15,7 @@
   overflow: hidden;
   padding: 1vh;
   border: solid 2px white;
+  border-radius: 5px;
 }
 .backgroundCircle {
   height: 25vh;

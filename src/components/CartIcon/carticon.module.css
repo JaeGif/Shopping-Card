@@ -9,6 +9,9 @@
 .cartIcon {
   height: 5vh;
 }
+.cartIcon:hover {
+  cursor: pointer;
+}
 .cartParent {
   position: relative;
   height: 6vh;
@@ -17,7 +20,6 @@
   justify-content: flex-start;
   align-items: flex-end;
 }
-
 .inCart {
   position: absolute;
   z-index: 10;

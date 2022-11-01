@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 20vw;
+  gap: 30vw;
   height: 8vh;
 }
 .navList {
@@ -16,7 +16,7 @@
   align-items: center;
   text-decoration: none;
   list-style: none;
-  width: 20vw;
+  width: fit-content;
 }
 .theme {
   background-color: black;

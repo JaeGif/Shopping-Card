@@ -9,7 +9,7 @@ export default function ProductDetailed(props) {
         style={randomPositionOfCircleStyles()}
         className={`${styles.backgroundCircle}`}
       ></div>
-      <h2>{props.productName}</h2>
+      <h2 style={{ zIndex: '2' }}>{props.productName}</h2>
       <img
         className={styles.productImg}
         src={props.productImg}

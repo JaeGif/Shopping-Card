@@ -1,0 +1,20 @@
+.productImg {
+  height: 20vh;
+}
+.productName {
+  color: black;
+}
+
+.productPrice {
+  color: black;
+}
+.remove {
+  padding: 0;
+}
+.productWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}

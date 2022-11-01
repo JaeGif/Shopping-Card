@@ -1,0 +1,11 @@
+.checkout {
+  padding: 0;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.subtotal {
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: solid 2px black;
+  padding-top: 5px;
+}
