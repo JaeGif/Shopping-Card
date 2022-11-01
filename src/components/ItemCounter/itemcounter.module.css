@@ -1,28 +1,23 @@
 .counterContainer {
   display: flex;
+
   justify-content: center;
   align-items: center;
   border-radius: 2px;
   gap: 1vw;
+  padding: 0.5vh;
+  z-index: 10;
 }
-
 .icons {
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 2;
+  padding: 0;
+  width: 10vw;
 }
 .iconContainer {
-  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.inputSelect {
-  height: 4vh;
-  width: 4vw;
-  text-align: center;
-  overflow: hidden;
+  z-index: 2;
 }
 .icons:hover {
   color: #ff4499;

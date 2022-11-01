@@ -12,7 +12,7 @@
   src: local('futura'), url('./assets/fonts/futura.otf');
 }
 * {
-  font-family: 'tokyonight';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: lighter;
 }
@@ -25,6 +25,7 @@ button:after,
 button:before {
   border: 0 solid;
   box-sizing: border-box;
+  font-family: 'tokyonight';
 }
 button {
   -webkit-tap-highlight-color: transparent;

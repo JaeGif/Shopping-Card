@@ -7,7 +7,7 @@ export default function ProductDetailed(props) {
     <div className={styles.productCard}>
       <div
         style={randomPositionOfCircleStyles()}
-        className={styles.backgroundCircle}
+        className={`${styles.backgroundCircle}`}
       ></div>
       <h2>{props.productName}</h2>
       <img
