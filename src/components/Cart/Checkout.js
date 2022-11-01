@@ -3,7 +3,7 @@ import styles from './checkout.module.css';
 
 export default function Checkout({ totalPrice }) {
   return (
-    <div>
+    <div className={styles.sticky}>
       <div className={styles.subtotal}>Subtotal: ${totalPrice}</div>
       <button className={styles.checkout}>
         <div className='original'>Checkout</div>

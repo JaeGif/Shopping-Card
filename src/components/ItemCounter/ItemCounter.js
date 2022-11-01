@@ -12,25 +12,6 @@ export default function ItemCounter({
       <div className={styles.iconContainer}>
         <button
           onClick={() => {
-            removeItemFromCart(itemObject.id);
-          }}
-          className={styles.icons}
-        >
-          <div className='original'>Remove</div>
-          <div className='letters'>
-            <span>R</span>
-            <span>e</span>
-            <span>m</span>
-            <span>o</span>
-            <span>v</span>
-            <span>e</span>
-          </div>
-        </button>
-      </div>
-
-      <div className={styles.iconContainer}>
-        <button
-          onClick={() => {
             addItemToCart(itemObject);
           }}
           className={styles.icons}

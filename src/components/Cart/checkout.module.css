@@ -6,6 +6,17 @@
 .subtotal {
   font-size: 1.5rem;
   text-align: center;
-  border-top: solid 2px black;
-  padding-top: 5px;
+  padding-top: 10px;
+  color: black;
+}
+.sticky {
+  position: sticky;
+  border-top: ridge 3px black;
+  bottom: 0;
+  background-color: rgba(255, 68, 153, 0.75);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
