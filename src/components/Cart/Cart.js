@@ -13,6 +13,7 @@ export default function Cart({ cart, isOpen, items }) {
     let price = 0;
     for (let i = 0; i < cart.length; i++) {
       price += cart[i].price;
+      price = Math.round(price * 100) / 100;
     }
     return price;
   };
