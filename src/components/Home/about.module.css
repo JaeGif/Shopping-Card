@@ -1,0 +1,95 @@
+:root {
+  --pink-highlight: rgb(222, 57, 131);
+  --blue-green-highlight: rgb(0, 192, 157);
+  --dark-blue-theme: #070124;
+  --mid-blue-theme: #004687;
+}
+
+.mainProductImg {
+  height: 92vh;
+}
+.leftBlock {
+  margin-top: 0;
+  margin-right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(11, 6, 37, 0.7);
+  border-left: groove 5px rgb(0, 0, 0);
+}
+.circleFlair {
+  position: absolute;
+  background-color: rgba(0, 192, 157, 0.95);
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-color 0.333s linear;
+  box-shadow: #00000085 5px 5px 20px;
+}
+.circleFlairHover {
+  background-color: rgba(222, 57, 131, 0.95);
+  box-shadow: #00000085 5px 5px 20px;
+}
+
+.imgContainer {
+  position: relative;
+  height: 92vh;
+  z-index: 10;
+  margin: 5vh;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 92vh;
+  width: 100vw;
+  margin: 0;
+  backdrop-filter: brightness(75%);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.background {
+  background-image: url('../../assets/tokyonight.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* rgb(23, 3, 34) */
+.productNameFont {
+  font-size: 3rem;
+  color: rgb(222, 57, 131);
+}
+.homeDescriptionP {
+  font-size: 2rem;
+}
+.homeSubDescription {
+  font-size: 1.5rem;
+}
+.socialsIcons {
+  height: 5vh;
+}
+.socialsWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 4vh;
+  gap: 15px;
+}
+.padding {
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+}
+.innerLeft {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

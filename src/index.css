@@ -1,16 +1,8 @@
 @font-face {
-  font-family: 'FutureMoon';
-  src: local('futuremoon'), url('./assets/fonts/futuremoon.ttf');
-}
-
-@font-face {
   font-family: 'tokyonight';
   src: local('tokyonight'), url('./assets/fonts/tokyonight.ttf');
 }
-@font-face {
-  font-family: 'futura';
-  src: local('futura'), url('./assets/fonts/futura.otf');
-}
+
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
@@ -36,6 +28,7 @@ button {
   background-color: #000;
   background-image: none;
   color: #00ffd2;
+
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,

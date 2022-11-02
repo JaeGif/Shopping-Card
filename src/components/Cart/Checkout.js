@@ -9,11 +9,11 @@ export default function Checkout({ totalPrice }) {
         <div className={`original ${styles.iconsOriginalColor}`}>Checkout</div>
         <div className={`letters ${styles.iconsAfterColor}`}>
           <span>Pay</span>
-          <span>men</span>
-          <span>t M</span>
+          <span>me</span>
+          <span>nt M</span>
           <span>et</span>
-          <span>ho</span>
-          <span>d</span>
+          <span>th</span>
+          <span>od</span>
         </div>
       </button>
     </div>

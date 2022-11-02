@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/Nav/NavBar';
 import { useState } from 'react';
-import Overview from './components/Overview/Overview';
-import Home from './components/Home/Home';
+import Store from './components/Overview/Store';
+import Home from './components/Home/About';
 import Cart from './components/Cart/Cart';
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <NavBar
         removeItemFromCart={removeItemFromCart}
         cart={cartItems}
@@ -45,7 +45,7 @@ const App = () => {
         <Route
           path='/store'
           element={
-            <Overview
+            <Store
               addItemToCart={addItemToCart}
               removeItemFromCart={removeItemFromCart}
             />

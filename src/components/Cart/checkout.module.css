@@ -2,6 +2,7 @@
   padding: 5px;
   margin: 5px;
   margin-bottom: 20px;
+  min-width: 15vw;
 }
 .subtotal {
   font-size: 1.5rem;

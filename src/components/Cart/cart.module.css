@@ -12,5 +12,7 @@
   height: 90vh;
   transition: transform 0.75s ease;
   background-color: rgba(0, 0, 0, 0.8);
+  border-left: rgb(0, 68, 255) solid 2px;
+  border-top: rgb(0, 68, 255) solid 2px;
   overflow: scroll;
 }
