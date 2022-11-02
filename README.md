@@ -6,7 +6,14 @@ It was built using React, React router, and tested with Jest.
 
 ## Getting Started
 
-`git clone https://github.com/JaeGif/Shopping-Card.git`  
-`cd shopping`  
-`npm install`  
+First Clone the repo
+`git clone https://github.com/JaeGif/Shopping-Card.git`
+
+cd to the working directory
+`cd shopping`
+
+install dependencies
+`npm install`
+
+start React App
 `npm start`
