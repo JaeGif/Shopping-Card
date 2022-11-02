@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './cart.module.css';
 import Product from '../Product/Product';
 import uniqid from 'uniqid';
 import Checkout from './Checkout';
+import { useState } from 'react';
 
 export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
+  const [isEmpty, setIsEmpty] = useState(true);
+
+  useEffect(() => {
+    if (cart.length >= 1) {
+      setIsEmpty(false);
+    } else {
+      setIsEmpty(true);
+    }
+  }, [cart, removeItemFromCart]);
+
   const cartItemsRendered = cart.map((el) => (
     <Product
       src={el.url}
@@ -30,7 +41,13 @@ export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
       style={isOpen ? cartOpenStyles : noneStyles}
       className={styles.cartContainer}
     >
-      <div>{cartItemsRendered}</div>
+      <div>
+        {isEmpty ? (
+          <h1 style={{ color: 'white' }}>Your cart is empty</h1>
+        ) : (
+          cartItemsRendered
+        )}
+      </div>
       <Checkout totalPrice={totalPrice()} />
     </div>
   );
