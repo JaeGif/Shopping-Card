@@ -2,11 +2,11 @@
   height: 20vh;
 }
 .productName {
-  color: black;
+  color: white;
 }
 
 .productPrice {
-  color: black;
+  color: white;
 }
 .remove {
   padding: 0;
@@ -17,4 +17,24 @@
   align-items: center;
   flex-direction: column;
   margin: 10px;
+}
+
+.icons {
+  width: 10vw;
+  border: #ff4499 1px solid;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+.icons:hover {
+  color: white;
+}
+.iconsOriginalColor {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: white;
 }

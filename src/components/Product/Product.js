@@ -11,10 +11,10 @@ export default function Product({ name, price, src, id, removeItemFromCart }) {
         onClick={() => {
           removeItemFromCart(id);
         }}
-        className={styles.remove}
+        className={`${styles.remove} ${styles.icons}`}
       >
-        <div className='original'>Remove</div>
-        <div className='letters'>
+        <div className={`original ${styles.iconsOriginalColor}`}>Remove</div>
+        <div className={`letters ${styles.iconsAfterColor}`}>
           <span>R</span>
           <span>e</span>
           <span>m</span>

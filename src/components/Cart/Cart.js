@@ -20,8 +20,9 @@ export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
     let price = 0;
     for (let i = 0; i < cart.length; i++) {
       price += cart[i].price;
-      price = Math.round((price + Number.EPSILON) * 100) / 100;
     }
+    price = (Math.round(Number(parseFloat(price)) * 100) / 100).toFixed(2);
+
     return price;
   };
   return (
