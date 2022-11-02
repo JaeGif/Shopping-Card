@@ -11,6 +11,7 @@
 .icons {
   padding: 0;
   width: 10vw;
+  border: white 1px solid;
 }
 .iconContainer {
   display: flex;
@@ -20,5 +21,14 @@
   z-index: 2;
 }
 .icons:hover {
+  color: #ff4499;
+  border: #ff4499 1px solid;
+}
+.iconsOriginalColor {
+  background-color: black;
+  color: white;
+}
+
+.iconsAfterColor {
   color: #ff4499;
 }

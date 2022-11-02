@@ -3,6 +3,9 @@ import coatURL from '../../assets/products/coat.png';
 import dopeShirtURL from '../../assets/products/dopeshirt.png';
 import jeansURL from '../../assets/products/jeans.png';
 import shirtURL from '../../assets/products/shirt.png';
+import kyotopantsURL from '../../assets/products/jpants.png';
+import stockpinkURL from '../../assets/products/stockpink.png';
+
 import uniqid from 'uniqid';
 
 export const catalog = {
@@ -17,8 +20,7 @@ export const catalog = {
     },
     {
       name: "Trencher's Coat",
-      description:
-        'We pinched this off a choom for 400 eddies. Stylish and sleek, you can have it for 2 and some change.',
+      description: 'Big coat for big personalities. Own the style.',
       url: `${coatURL}`,
       id: uniqid(),
       price: 209.99,
@@ -33,7 +35,7 @@ export const catalog = {
     {
       name: 'Jeans',
       description:
-        'A classic no matter the decade. Quality denim always helps in a pinch.',
+        'A classic no matter the decade. Quality denim with minimal inseams for maximal comfort.',
       url: `${jeansURL}`,
       id: uniqid(),
       price: 79.99,
@@ -45,6 +47,22 @@ export const catalog = {
       url: `${shirtURL}`,
       id: uniqid(),
       price: 599.99,
+    },
+    {
+      name: 'Pink Hoodie',
+      description:
+        'Comfortable, fluffy and of course a bright stand out color. This hoodie has exactly what it needs.',
+      url: `${stockpinkURL}`,
+      id: uniqid(),
+      price: 39.99,
+    },
+    {
+      name: 'Kyoto Sweats',
+      description:
+        'Breathable, stylable, comfortable, functional, fashionable,   ...-able.',
+      url: `${kyotopantsURL}`,
+      id: uniqid(),
+      price: 129.99,
     },
   ],
 };

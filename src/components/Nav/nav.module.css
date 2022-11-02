@@ -21,6 +21,7 @@
 .theme {
   background-color: black;
   color: var(--mid-blue-theme);
+  border-bottom: 2px solid white;
 }
 .innerLiText {
   display: flex;

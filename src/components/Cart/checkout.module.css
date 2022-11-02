@@ -8,12 +8,13 @@
   text-align: center;
   padding-top: 10px;
   color: black;
+  font-weight: 400;
+  font-style: italic;
 }
 .sticky {
   position: sticky;
-  border-top: ridge 3px black;
+  color: black;
   bottom: 0;
-  background-color: rgba(255, 68, 153, 0.75);
   width: 100%;
   display: flex;
   justify-content: center;

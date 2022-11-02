@@ -16,8 +16,10 @@ export default function ItemCounter({
           }}
           className={styles.icons}
         >
-          <div className='original'>Add To Cart</div>
-          <div className='letters'>
+          <div className={`original ${styles.iconsOriginalColor}`}>
+            Add To Cart
+          </div>
+          <div className={`letters ${styles.iconsAfterColor}`}>
             <span>Ad</span>
             <span>d T</span>
             <span>o C</span>
