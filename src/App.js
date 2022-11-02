@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/Shopping-Card'>
       <NavBar
         removeItemFromCart={removeItemFromCart}
         cart={cartItems}
