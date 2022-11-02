@@ -13,7 +13,7 @@
 }
 .sticky {
   position: sticky;
-  color: black;
+  background-color: black;
   bottom: 0;
   width: 100%;
   display: flex;

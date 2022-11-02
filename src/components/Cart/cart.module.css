@@ -11,6 +11,6 @@
   z-index: 20;
   height: 90vh;
   transition: transform 0.75s ease;
-  background-color: rgba(0, 0, 0, 0.724);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: scroll;
 }

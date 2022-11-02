@@ -3,10 +3,12 @@
 }
 .productName {
   color: white;
+  font-weight: 500;
 }
 
 .productPrice {
   color: white;
+  font-style: italic;
 }
 .remove {
   padding: 0;
