@@ -1,14 +1,8 @@
-.flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .flexSpace {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  gap: 30vw;
-  height: 8vh;
+  min-height: 8vh;
 }
 .navList {
   display: flex;
@@ -16,7 +10,8 @@
   align-items: center;
   text-decoration: none;
   list-style: none;
-  width: fit-content;
+  max-width: 30vw;
+  gap: 30px;
 }
 .theme {
   background-color: black;
@@ -27,8 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
-  width: 10vw;
+  max-height: 5vh;
+  max-width: 10vw;
   min-width: fit-content;
   font-size: 2rem;
   padding: 0.5vh;

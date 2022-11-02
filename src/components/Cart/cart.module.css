@@ -1,18 +1,20 @@
 .cartContainer {
   display: flex;
   position: absolute;
-  left: 11vw;
-  top: 140%;
+  left: 270px;
+  top: 110%;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  width: 20vw;
+  width: 340px;
   z-index: 20;
-  height: 90vh;
+  min-height: 90vh;
+  max-height: 90vh;
   transition: transform 0.75s ease;
   background-color: rgba(0, 0, 0, 0.8);
   border-left: rgb(0, 68, 255) solid 2px;
   border-top: rgb(0, 68, 255) solid 2px;
   overflow: scroll;
+  padding: 10px;
 }

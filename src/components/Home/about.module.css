@@ -60,14 +60,14 @@
 }
 /* rgb(23, 3, 34) */
 .productNameFont {
-  font-size: 3rem;
+  font-size: 3em;
   color: rgb(222, 57, 131);
 }
 .homeDescriptionP {
-  font-size: 2rem;
+  font-size: 2em;
 }
 .homeSubDescription {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .socialsIcons {
   height: 5vh;

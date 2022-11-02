@@ -16,7 +16,7 @@
   padding: 1vh;
   border: solid 2px white;
   border-radius: 5px;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 .backgroundCircle {
   border-radius: 50%;

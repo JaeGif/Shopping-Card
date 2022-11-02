@@ -37,7 +37,7 @@ button {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  width: 25vh;
+  min-width: 25vh;
 }
 button:-moz-focusring {
   outline: auto;
