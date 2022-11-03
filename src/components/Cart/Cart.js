@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 import Checkout from './Checkout';
 import { useState } from 'react';
 
-export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
+export default function Cart({ cart, isOpen, removeItemFromCart }) {
   const [isEmpty, setIsEmpty] = useState(true);
 
   useEffect(() => {
@@ -38,8 +38,9 @@ export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
   };
   return (
     <div
-      style={isOpen ? cartOpenStyles : noneStyles}
-      className={styles.cartContainer}
+      className={`${styles.cartContainer} ${
+        isOpen ? styles.cartOpenStyles : styles.noneStyles
+      }`}
     >
       <div>
         {isEmpty ? (
@@ -52,8 +53,3 @@ export default function Cart({ cart, isOpen, items, removeItemFromCart }) {
     </div>
   );
 }
-
-const cartOpenStyles = {
-  transform: 'translateX(-27vw)',
-};
-const noneStyles = {};

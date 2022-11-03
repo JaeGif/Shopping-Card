@@ -1,20 +1,25 @@
 .cartContainer {
   display: flex;
   position: absolute;
-  left: 270px;
-  top: 110%;
+
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  width: 340px;
+  width: 300px;
   z-index: 20;
   min-height: 90vh;
   max-height: 90vh;
   transition: transform 0.75s ease;
   background-color: rgba(0, 0, 0, 0.8);
-  border-left: rgb(0, 68, 255) solid 2px;
+  border-right: rgb(0, 68, 255) solid 2px;
   border-top: rgb(0, 68, 255) solid 2px;
   overflow: scroll;
   padding: 10px;
+}
+.cartOpenStyles {
+  transform: translate(-365px);
+}
+.noneStyles {
+  margin: auto;
 }

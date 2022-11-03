@@ -2,15 +2,8 @@ import React, { useEffect } from 'react';
 import styles from './carticon.module.css';
 import { useState } from 'react';
 import cartIcon from '../../assets/icons/cart96.png';
-import Cart from '../Cart/Cart';
 
-export default function CartIcon({
-  cart,
-  items,
-  openCart,
-  isOpen,
-  removeItemFromCart,
-}) {
+export default function CartIcon({ items, openCart, removeItemFromCart }) {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     if (items >= 1) {
@@ -29,11 +22,11 @@ export default function CartIcon({
         alt='cart'
       />
       {isVisible ? <div className={styles.inCart}>{items}</div> : <></>}
-      <Cart
+      {/*       <Cart
         removeItemFromCart={removeItemFromCart}
         cart={cart}
         isOpen={isOpen}
-      />
+      /> */}
     </div>
   );
 }

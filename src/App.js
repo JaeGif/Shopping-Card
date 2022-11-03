@@ -8,6 +8,17 @@ import Cart from './components/Cart/Cart';
 const App = () => {
   const [numItemsInCart, setNumItemsInCart] = useState(0);
   const [cartItems, setCartItems] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const openCart = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    if (!isCartOpen) {
+      setIsCartOpen(true);
+    } else {
+      setIsCartOpen(false);
+    }
+  };
 
   const onAddItemNumUpdate = () => {
     setNumItemsInCart(numItemsInCart + 1);
@@ -39,7 +50,13 @@ const App = () => {
         removeItemFromCart={removeItemFromCart}
         cart={cartItems}
         items={numItemsInCart}
+        openCart={openCart}
       ></NavBar>
+      <Cart
+        cart={cartItems}
+        isOpen={isCartOpen}
+        removeItemFromCart={removeItemFromCart}
+      />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route
