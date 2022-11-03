@@ -39,7 +39,7 @@ export default function Home() {
         <div className={styles.rightBlock}>
           <div className={styles.padding}>
             <div className={styles.innerRight}>
-              <h2 className={styles.productNameFont}>Breezy Bomber</h2>
+              <h2 className={styles.productNameFont}>Tokyo Theme</h2>
               <p className={styles.homeDescriptionP}>
                 Out main product line this year is inspired heavily by
                 CyberPunk. The theme draws from Tokyo Night and grungy street
