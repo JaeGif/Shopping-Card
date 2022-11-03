@@ -2,7 +2,7 @@
 
 This project is a mini fashion store following a tokyo night theme.
 
-It was built using React, React router, and tested with Jest.
+It was built using React, and React router. Fully Responsive.
 
 ## Getting Started
 
