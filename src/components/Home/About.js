@@ -36,9 +36,9 @@ export default function Home() {
             }
           ></div>
         </div>
-        <div className={styles.leftBlock}>
+        <div className={styles.rightBlock}>
           <div className={styles.padding}>
-            <div className={styles.innerLeft}>
+            <div className={styles.innerRight}>
               <h2 className={styles.productNameFont}>Breezy Bomber</h2>
               <p className={styles.homeDescriptionP}>
                 Out main product line this year is inspired heavily by
@@ -53,7 +53,10 @@ export default function Home() {
                 make a quality, yet affordable brand for everyone.
               </p>
             </div>
-            <Link style={{ textDecoration: 'none' }} to='/store'>
+            <Link
+              style={{ textDecoration: 'none', width: 'fit-content' }}
+              to='/store'
+            >
               <button>
                 <div className='original'>Tokyo Night Line</div>
                 <div className='letters'>
@@ -68,7 +71,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={styles.socialsWrapper}>
-            <p style={{ fontSize: '2rem' }}>Contact Us</p>
+            <p style={{ fontSize: '1.5rem' }}>Contact Us</p>
             <a
               href='https://github.com/JaeGif'
               rel='noreferrer'

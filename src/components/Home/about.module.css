@@ -6,15 +6,18 @@
 }
 
 .mainProductImg {
-  height: 92vh;
+  max-height: 87vh;
 }
-.leftBlock {
+
+.rightBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   margin-top: 0;
   margin-right: 0;
-  height: 100%;
-  width: 100%;
   background-color: rgba(11, 6, 37, 0.7);
   border-left: groove 5px rgb(0, 0, 0);
+  height: 92vh;
 }
 .circleFlair {
   position: absolute;
@@ -35,16 +38,15 @@
 
 .imgContainer {
   position: relative;
-  height: 92vh;
   z-index: 10;
   margin: 5vh;
+  margin-bottom: 0;
+  height: 87vh;
 }
-
 .homeContainer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 92vh;
   width: 100vw;
   margin: 0;
   backdrop-filter: brightness(75%);
@@ -70,7 +72,7 @@
   font-size: 1.5em;
 }
 .socialsIcons {
-  height: 5vh;
+  max-height: 5vh;
 }
 .socialsWrapper {
   display: flex;
@@ -80,16 +82,62 @@
   gap: 15px;
 }
 .padding {
-  padding: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 75vh;
+  height: 100%;
+  margin: 3vh;
 }
-.innerLeft {
-  position: relative;
-  height: fit-content;
+
+.innerRight {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+@media only screen and (max-width: 1125px) {
+  .imgContainer {
+    margin-right: -15vh;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .homeContainer {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .homeContainer {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .imgContainer {
+    margin-left: -15vh;
+    margin-right: -20vh;
+  }
+  .circleFlair {
+    top: 0;
+    left: 15vw;
+    height: 50vh;
+    width: 50vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .background {
+    background: none;
+    background-color: #070124;
+  }
+  .homeContainer {
+    min-height: 92vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .circleFlair {
+    left: 0;
+    height: 70vh;
+    width: 70vh;
+  }
 }

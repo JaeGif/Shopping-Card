@@ -35,3 +35,9 @@
 .logoText {
   font-size: 2rem;
 }
+
+@media (max-width: 650px) {
+  .logoText {
+    display: none;
+  }
+}
