@@ -52,6 +52,7 @@
   backdrop-filter: brightness(75%);
   color: white;
   margin: 0px;
+  margin-top: 8vh;
   padding: 0px;
   overflow: hidden;
 }

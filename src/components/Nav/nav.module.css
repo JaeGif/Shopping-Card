@@ -17,6 +17,10 @@
   background-color: black;
   color: var(--mid-blue-theme);
   border-bottom: 2px solid white;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
 }
 .innerLiText {
   display: flex;
@@ -24,9 +28,8 @@
   align-items: center;
   max-height: 5vh;
   max-width: 10vw;
-  min-width: fit-content;
   font-size: 2rem;
-  padding: 0.5vh;
+  padding: 10px;
   color: white;
 }
 .innerLiText:hover {
@@ -39,5 +42,8 @@
 @media (max-width: 650px) {
   .logoText {
     display: none;
+  }
+  .innerLiText {
+    font-size: 1.5rem;
   }
 }
