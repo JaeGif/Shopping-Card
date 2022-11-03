@@ -3,7 +3,7 @@ import styles from './carticon.module.css';
 import { useState } from 'react';
 import cartIcon from '../../assets/icons/cart96.png';
 
-export default function CartIcon({ items, openCart, removeItemFromCart }) {
+export default function CartIcon({ items, openCart }) {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     if (items >= 1) {
@@ -22,11 +22,6 @@ export default function CartIcon({ items, openCart, removeItemFromCart }) {
         alt='cart'
       />
       {isVisible ? <div className={styles.inCart}>{items}</div> : <></>}
-      {/*       <Cart
-        removeItemFromCart={removeItemFromCart}
-        cart={cart}
-        isOpen={isOpen}
-      /> */}
     </div>
   );
 }

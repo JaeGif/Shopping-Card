@@ -2,11 +2,7 @@ import React from 'react';
 
 import styles from './itemcounter.module.css';
 
-export default function ItemCounter({
-  itemObject,
-  addItemToCart,
-  removeItemFromCart,
-}) {
+export default function ItemCounter({ itemObject, addItemToCart }) {
   return (
     <div className={styles.counterContainer}>
       <div className={styles.iconContainer}>

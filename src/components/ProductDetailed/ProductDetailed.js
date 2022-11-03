@@ -35,8 +35,8 @@ export default function ProductDetailed(props) {
 }
 /* 0 -> 255 rgb */
 const randomPositionOfCircleStyles = () => {
-  const right = Math.floor(Math.random() * 100);
-  const top = Math.floor(Math.random() * 100);
+  const right = Math.floor(Math.random() * 40);
+  const top = Math.floor(Math.random() * 40);
   const r = Math.floor(Math.random() * 255);
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
