@@ -51,7 +51,7 @@ export const catalog = {
     {
       name: 'Pink Hoodie',
       description:
-        'Comfortable, fluffy and of course a bright stand out color. This hoodie has exactly what it needs.',
+        'Comfortable, and fluffy. This hoodie has exactly what it needs.',
       url: `${stockpinkURL}`,
       id: uniqid(),
       price: 39.99,

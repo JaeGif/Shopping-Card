@@ -4,11 +4,11 @@ import { catalog } from './catalog';
 import uniqid from 'uniqid';
 import styles from './store.module.css';
 
-export default function Overview(props) {
+export default function Overview({ addItemToCart, removeItemFromCart }) {
   const productInfo = catalog.products.map((product) => (
     <ProductDetailed
-      addItemToCart={props.addItemToCart}
-      removeItemFromCart={props.removeItemFromCart}
+      addItemToCart={addItemToCart}
+      removeItemFromCart={removeItemFromCart}
       fullItemObject={product}
       productName={product.name}
       productDescription={product.description}

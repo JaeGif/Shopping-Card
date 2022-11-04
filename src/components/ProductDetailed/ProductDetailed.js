@@ -2,7 +2,15 @@ import React from 'react';
 import ItemCounter from '../ItemCounter/ItemCounter';
 import styles from './detailed.module.css';
 
-export default function ProductDetailed(props) {
+export default function ProductDetailed({
+  productName,
+  productImg,
+  productDescription,
+  productPrice,
+  fullItemObject,
+  addItemToCart,
+  removeItemFromCart,
+}) {
   return (
     <div className={styles.productCard}>
       <div
@@ -13,20 +21,20 @@ export default function ProductDetailed(props) {
         style={randomPositionOfCircleStyles()}
         className={`${styles.backgroundCircle}`}
       ></div>
-      <h2 style={{ zIndex: '2' }}>{props.productName}</h2>
+      <h2 style={{ zIndex: '2' }}>{productName}</h2>
       <img
         className={styles.productImg}
-        src={props.productImg}
+        src={productImg}
         alt='missing product'
       />
-      <p className={styles.textWrapping}>{props.productDescription}</p>
+      <p className={styles.textWrapping}>{productDescription}</p>
       <div className={styles.priceAdding}>
-        <p className={styles.price}>{props.productPrice}</p>
+        <p className={styles.price}>{productPrice}</p>
         <span>
           <ItemCounter
-            itemObject={props.fullItemObject}
-            addItemToCart={props.addItemToCart}
-            removeItemFromCart={props.removeItemFromCart}
+            itemObject={fullItemObject}
+            addItemToCart={addItemToCart}
+            removeItemFromCart={removeItemFromCart}
           ></ItemCounter>
         </span>
       </div>
