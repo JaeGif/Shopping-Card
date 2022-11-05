@@ -41,7 +41,7 @@ export default function Home() {
             <div className={styles.innerRight}>
               <h2 className={styles.productNameFont}>Tokyo Theme</h2>
               <p className={styles.homeDescriptionP}>
-                Out main product line this year is inspired heavily by
+                Our main product line this year is inspired heavily by
                 CyberPunk. The theme draws from Tokyo Night and grungy street
                 styles to create an effortlessly cool and complex blend of old
                 and new.
